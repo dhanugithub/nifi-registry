@@ -1,9 +1,8 @@
-ARG UPSTREAM_VERSION=0.5.0
-ARG MIRROR=https://archive.apache.org/dist
- 
 # build phase
 FROM alpine:3.9 as build
 LABEL stage=build
+ARG UPSTREAM_VERSION=0.5.0
+ARG MIRROR=https://archive.apache.org/dist
 ARG UPSTREAM_VERSION
 ARG MIRROR
  
