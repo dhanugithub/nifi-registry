@@ -1,5 +1,5 @@
 # build phase
-FROM alpine:3.9 as build
+FROM alpine:3.9 AS build
 LABEL stage=build
 ARG UPSTREAM_VERSION=0.5.0
 ARG MIRROR=https://archive.apache.org/dist
